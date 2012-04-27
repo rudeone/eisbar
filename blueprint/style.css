@@ -1,0 +1,77 @@
+body {
+font-family:verdana;
+font-size:12px;
+color:white;
+}
+p {
+	line-height:11pt;
+}
+h2 {
+	font-size:16px;
+	color:white;
+	margin-bottom:25px;
+}
+.wrapper {
+	width:1024px;
+	margin:auto;
+		box-shadow:0px 5px 23px #000;
+		text-align:left;
+	
+}
+#header {
+	height:226px;
+	background:url('../images/eb_01.jpg') no-repeat center center;
+	text-align:center;
+	margin-top:auto;
+}
+#header img {
+	margin-top:25px;
+}
+#content {
+	background:url('../images/eb_02.jpg') top left;
+	height:542px;
+}
+#content_inner {
+	min-height:400px;
+
+	padding:36px;
+	padding-top:32px;
+	padding-right:5px;
+	padding-bottom:0px;
+}
+div.left {
+	width:280px;
+	float:left;
+}
+div.middle {
+	width:300px;
+	float:left;
+	margin-left:60px;
+}
+div.middle .wann {
+	margin-bottom:26px;
+}
+div.middle .kontakt img {
+	margin-right:25px;
+	position:relative;
+	top:8px;
+}
+.right_col {
+	float:left;
+	margin-left:60px;
+}
+.clr {
+	clear:both;
+}
+.footer {
+	margin-top:20px;
+}
+.footer img {
+	margin-right:31px;
+}
+.footer img:last-child {
+	margin:0px;
+}
+th, td, caption {
+    padding: 0px 10px 12px 0px;
+}
