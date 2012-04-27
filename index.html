@@ -42,27 +42,7 @@
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDuIRkDy4TjNu-nswv6UXLGB-821-Ve-B8&sensor=false">
     </script>
-    <script type="text/javascript">
-      function initialize() {
-		//var myLatlng = new google.maps.LatLng(-34.397, 150.644);
-		var myLatlng = new google.maps.LatLng(51.23841093090336, 6.790924072265625);
-		var myM = new google.maps.LatLng(51.2367719237919, 6.791782379150391);
-
-        var myOptions = {
-          center: myLatlng,
-          zoom: 15,
-          mapTypeId: google.maps.MapTypeId.TERRAIN
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-            myOptions);
-        var marker = new google.maps.Marker({
-            position: myM,
-            title:"Eisbar!"
-        });
-
-        marker.setMap(map);
-      }
-    </script>
+  
 	
 
 </head>
@@ -71,13 +51,15 @@
 <div class="wrapper">
 
 	<div id="header">
-		<img src="images/img_03.png"/>
+		<a href="/">
+			<img src="images/img_03.png"/>
+		</a>
 	
 	</div>
 	<div id="content">
 	<div id="content_inner">
 		<div class="left">
-			<h2>Das Eiscafé in Düsseldorf</h2>
+			<h1>Das Eiscafé in Düsseldorf</h1>
 			<p>In unserem Eisladen erwarten Sie kreative und klassische Eis- und Dessertvariationen die wir mit frischen und 
 				hochwertigen Zutaten selbst zubereiten. Daneben servieren wir Espresso und Kaffee in bester Bioqualität aus einer 				Würzburger Privatrösterei.</p>
 			<p>Wir interpretieren Eiscreme immer wieder neu und &uuml;berraschen Sie mit selbst kreierten K&ouml;stlichkeiten. In unserem stilsicheren Ambiente aus Eis und Licht freuen wir uns Ihren Gaumen verw&ouml;hnen zu d&uuml;rfen.</p>
@@ -87,21 +69,21 @@
 		</div>
 		<div class="middle">
 			<div class="wann">
-				<h2>Wann ist die EisBar geöffnet?</h2>
+				<h1>Wann ist die EisBar geöffnet?</h1>
 				<table>
 					<tr><td>Montag - Freitag</td> 		<td>09:00 Uhr - 19:00 Uhr</td></tr>
 					<tr><td>Samstag & Sonntag</td> 		<td>10:00 Uhr - 19:00 Uhr</td></tr>
 				</table>
 			</div>
 			<div class="kontakt">
-				<h2>Mit der EisBar in Kontakt treten:</h2>
+				<h1>Mit der EisBar in Kontakt treten:</h1>
 				<p><img src="images/img_07.png"/>0151/24291018</p>
 				<p><img src="images/img_10.png"/>mail [at] eisbar-duesseldorf.de</p>
 				<p><img src="images/img_12.png"/><a href="http://www.facebook.com/eisbar.dus">Gefällt uns ausgesprochen gut!</a></p>
 			</div>
 		</div>
 		<div class="right_col">
-			<h2>Wo ist die EisBar?</h2>
+			<h1>Wo ist die EisBar?</h1>
 			<p>Moltkestraße 97<br/>
 				40479 Düsseldorf</p>
 			<div id="map_canvas" style="width:249px; height:249px">
@@ -113,6 +95,11 @@
 		<div class="footer">
 			<img src="images/img_15.png"/><img src="images/img_17.png"/><img src="images/img_19.png"/><img src="images/img_21.png"/><img src="images/img_23.png"/><img src="images/img_25.jpg"/><img src="images/img_27.png"/>
 		
+		</div>
+		
+		<div class="clr"></div>
+		<div id="bottom_line">
+			<a href="impressum.html" title="impressum">impressum</a>
 		</div>
 	</div>
 	</div>
@@ -144,4 +131,25 @@
 </script>-->
   
 </body>
+  <script type="text/javascript">
+      function initialize() {
+		//var myLatlng = new google.maps.LatLng(-34.397, 150.644);
+		var myLatlng = new google.maps.LatLng(51.23841093090336, 6.790924072265625);
+		var myM = new google.maps.LatLng(51.2367719237919, 6.791782379150391);
+
+        var myOptions = {
+          center: myLatlng,
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            myOptions);
+        var marker = new google.maps.Marker({
+            position: myM,
+            title:"Eisbar!"
+        });
+
+        marker.setMap(map);
+      }
+    </script>
 </html>
